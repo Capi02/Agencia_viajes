@@ -1,6 +1,32 @@
 extends ./layout/index
 
+block slider 
+    .slider 
+        h1 Rop de Janeiro 
+        em aventura
+
 block contenido
     main.container.mt-5 
-        .row
-            h1= pagina
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est numquam sit illum voluptas ea ipsum iure aliquid inventore dicta sint, magni architecto placeat enim quas quod in natus repudiandae?
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores at, quia laborum eligendi ipsum, natus omnis corrupti explicabo debitis fuga accusamus veritatis quos fugiat incidunt architecto repellendus laudantium molestiae?
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen sobre nosotros" class="img-fluid")
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3  5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2,500 USD 
+
+    .container 
+        h2.mt-5.text-center Testimoniales 
+        include ./layout/bloque_testimoniales
+        
